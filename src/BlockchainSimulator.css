@@ -1,0 +1,148 @@
+/* Containers */
+.simulator-container {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: rgb(243, 244, 246);
+}
+
+.header-container {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.legend-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.legend-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 9999px;
+}
+
+/* Block styles */
+.blocks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.block-wrapper {
+  position: relative;
+}
+
+.block-arrow {
+  position: absolute;
+  right: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.block-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 24rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.block-number {
+  background-color: rgb(229, 231, 235);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.transaction-item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: rgb(249, 250, 251);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.transaction-amount {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgb(55, 65, 81);
+}
+
+.block-footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(229, 231, 235);
+  font-size: 0.75rem;
+  color: rgb(107, 114, 128);
+}
+
+/* Transaction notification */
+.transaction-notification {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: bounce 1s infinite;
+}
+
+/* Type-specific colors */
+.type-installation {
+  background-color: rgb(59, 130, 246);
+}
+
+.type-permit {
+  background-color: rgb(16, 185, 129);
+}
+
+.type-delivery {
+  background-color: rgb(139, 92, 246);
+}
+
+.type-inspection {
+  background-color: rgb(245, 158, 11);
+}
+
+.type-payment {
+  background-color: rgb(239, 68, 68);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

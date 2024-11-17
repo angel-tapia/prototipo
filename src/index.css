@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.block {
+  width: 360px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.block-title {
+  font-weight: bold;
+  color: #4b5563;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  background: #f9fafb;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.arrow {
+  color: #6b7280;
+}
