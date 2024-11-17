@@ -89,7 +89,7 @@ const BlockchainSimulator = () => {
   return (
     <div className="p-8 bg-gray-100 min-h-screen">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-4">Simulador de Blockchain CEMEX</h1>
+        <h1 className="text-3xl font-bold mb-4">Tabula: CEMEX Blockchain</h1>
         <div className="flex flex-wrap gap-4 mb-6">
           {documentTypes.map((doc) => (
             <div key={doc.type} className="flex items-center gap-2 bg-white p-2 rounded-lg shadow">
